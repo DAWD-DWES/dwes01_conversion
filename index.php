@@ -106,7 +106,6 @@ and open the template in the editor.
         echo"</br>";
         echo '(float) NULL';
         var_dump((float) NULL);
-        echo '(float) NULL ';
         // Conversión cadena
         echo "<h2>Conversión cadena</h2>";
         echo '(string) true ';

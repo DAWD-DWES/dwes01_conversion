@@ -1,12 +1,44 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
         <title>Conversión de valores entre tipos</title>
+        <meta name="viewport" content="width=device-width">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="stylesheet.css">
     </head>
     <body>
+        <h2>Conversión booleano</h2>
+        <table>
+            <tr>
+                <td>(bool) "false"</td>
+                <td class="conversion"><?php var_dump((bool) "false"); ?></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>(bool) "0"</td>
+                <td class="conversion"><?php var_dump((bool) "0"); ?></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>(bool) 0</td>
+                <td class="conversion"><?php var_dump((bool) 0); ?></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>(bool) "false"</td>
+                <td class="conversion"><?php var_dump((bool) "false"); ?></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>(bool) "false"</td>
+                <td class="conversion"><?php var_dump((bool) "false"); ?></td>
+            </tr>
+        </table>
         <?php
-        echo "<h2>Conversión booleano</h2>";
         echo '(bool) "false" ';
         var_dump((bool) "false");
         echo '<br />';

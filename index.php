@@ -13,148 +13,154 @@
                 <td>(bool) "false"</td>
                 <td class="conversion"><?php var_dump((bool) "false"); ?></td>
             </tr>
-        </table>
-        <table>
             <tr>
                 <td>(bool) "0"</td>
                 <td class="conversion"><?php var_dump((bool) "0"); ?></td>
             </tr>
-        </table>
-        <table>
             <tr>
-                <td>(bool) 0</td>
-                <td class="conversion"><?php var_dump((bool) 0); ?></td>
+                <td>(bool) 1</td>
+                <td class="conversion"><?php var_dump((bool) 1); ?></td>
+            </tr>
+            <tr>
+                <td>(bool) 1000</td>
+                <td class="conversion"><?php var_dump((bool) 1000); ?></td>
+            </tr>
+            <tr>
+                <td>(bool) ""</td>
+                <td class="conversion"><?php var_dump((bool) ""); ?></td>
+            </tr>
+            <tr>
+                <td>(bool) " "</td>
+                <td class="conversion"><?php var_dump((bool) " "); ?></td>
+            </tr>
+            <tr>
+                <td>(bool) 0b0</td>
+                <td class="conversion"><?php var_dump((bool) 0b0); ?></td>
+            </tr>
+            <tr>
+                <td>(bool) 0b1</td>
+                <td class="conversion"><?php var_dump((bool) 0b1); ?></td>
+            </tr><tr>
+                <td>(bool) 0.0</td>
+                <td class="conversion"><?php var_dump((bool) 0.0); ?></td>
+            </tr>
+            <tr>
+                <td>(bool) NULL</td>
+                <td class="conversion"><?php var_dump((bool) NULL); ?></td>
             </tr>
         </table>
+        <h2>Conversión entero</h2>
         <table>
             <tr>
-                <td>(bool) "false"</td>
-                <td class="conversion"><?php var_dump((bool) "false"); ?></td>
+                <td>(int) true</td>
+                <td class="conversion"><?php var_dump((int) true); ?></td>
+            </tr>
+            <tr>
+                <td>(int) false</td>
+                <td class="conversion"><?php var_dump((int) false); ?></td>
+            </tr>
+            <tr>
+                <td>(int) "123"</td>
+                <td class="conversion"><?php var_dump((int) "123"); ?></td>
+            </tr>
+            <tr>
+                <td>(int) "123.45"</td>
+                <td class="conversion"><?php var_dump((int) "123.45"); ?></td>
+            </tr>
+            <tr>
+                <td>(int) "123Hola"</td>
+                <td class="conversion"><?php var_dump((int) "123Hola"); ?></td>
+            </tr>
+            <tr>
+                <td>(int) "Hola123"</td>
+                <td class="conversion"><?php var_dump((int) "Hola123"); ?></td>
+            </tr>
+            <tr>
+                <td>(int) ""</td>
+                <td class="conversion"><?php var_dump((int) ""); ?></td>
+            </tr>
+            <tr>
+                <td>(int) "0.001"</td>
+                <td class="conversion"><?php var_dump((int) "0.001"); ?></td>
+            </tr>
+            <tr>
+                <td>(int) NULL</td>
+                <td class="conversion"><?php var_dump((int) NULL); ?></td>
             </tr>
         </table>
+        <h2>Conversión flotante decimal</h2>
         <table>
             <tr>
-                <td>(bool) "false"</td>
-                <td class="conversion"><?php var_dump((bool) "false"); ?></td>
+                <td>(float) true</td>
+                <td class="conversion"><?php var_dump((float) true); ?></td>
+            </tr>
+            <tr>
+                <td>(float) false</td>
+                <td class="conversion"><?php var_dump((float) false); ?></td>
+            </tr>
+            <tr>
+                <td>(float) "123"</td>
+                <td class="conversion"><?php var_dump((float) "123"); ?></td>
+            </tr>
+            <tr>
+                <td>(float) "123.45"</td>
+                <td class="conversion"><?php var_dump((float) "123.45"); ?></td>
+            </tr>
+            <tr>
+                <td>(float) "123Hola"</td>
+                <td class="conversion"><?php var_dump((float) "123Hola"); ?></td>
+            </tr>
+            <tr>
+                <td>(float) "Hola123"</td>
+                <td class="conversion"><?php var_dump((float) "Hola123"); ?></td>
+            </tr>
+            <tr>
+                <td>(float) ""</td>
+                <td class="conversion"><?php var_dump((float) ""); ?></td>
+            </tr>
+            <tr>
+                <td>(float) 0xA2</td>
+                <td class="conversion"><?php var_dump((float) 0xA2); ?></td>
+            </tr>
+            <tr>
+                <td>(float) "0.001"</td>
+                <td class="conversion"><?php var_dump((float) "0.001"); ?></td>
+            </tr>
+            <tr>
+                <td>(float) NULL</td>
+                <td class="conversion"><?php var_dump((float) NULL); ?></td>
             </tr>
         </table>
-        <?php
-        echo '(bool) "false" ';
-        var_dump((bool) "false");
-        echo '<br />';
-        echo '(bool) "0" ';
-        var_dump((bool) "0");
-        echo '<br />';
-        echo '(bool) 0 ';
-        var_dump((bool) 0);
-        echo '<br />';
-        echo '(bool) 1 ';
-        var_dump((bool) 1);
-        echo '<br />';
-        echo '(bool) 1000 ';
-        var_dump((bool) 1000);
-        echo '<br />';
-        echo '(bool) "" ';
-        var_dump((bool) "");
-        echo '<br />';
-        echo '(bool) " " ';
-        var_dump((bool) " ");
-        echo '<br />';
-        echo '(bool) 0b0 ';
-        var_dump((bool) 0b0);
-        echo '<br />';
-        echo '(bool) 0b1 ';
-        var_dump((bool) 0b1);
-        echo '<br />';
-        echo '(bool) 0.0 ';
-        var_dump((bool) 0.0);
-        echo '<br />';
-        echo '(bool) 1.0 ';
-        var_dump((bool) 1.0);
-        echo '<br />';
-        echo '(bool) NULL ';
-        var_dump((bool) NULL);
-        // Conversión entero
-        echo "<h2>Conversión entero</h2>";
-        echo '(int) true ';
-        var_dump((int) true);
-        echo '<br />';
-        echo '(int) false ';
-        var_dump((int) false);
-        echo '<br />';
-        echo '(int) "123" ';
-        var_dump((int) "123");
-        echo '<br />';
-        echo '(int) "123.45" ';
-        var_dump((int) "123.45");
-        echo '<br />';
-        echo '(int) "123Hola" ';
-        var_dump((int) "123Hola");
-        echo '<br />';
-        echo '(int) "Hola123" ';
-        var_dump((int) "Hola123");
-        echo '<br />';
-        echo '(int) "" ';
-        var_dump((int) "");
-        echo '<br />';
-        echo '(int) "0.001" ';
-        var_dump((int) "0.001");
-        echo '<br />';
-        echo '(int) NULL ';
-        var_dump((int) NULL);
-        // Conversión decimal
-        echo "<h2>Conversión decimal</h2>";
-        echo '(float) true ';
-        var_dump((float) true);
-        echo '<br />';
-        echo '(float) false ';
-        var_dump((float) false);
-        echo '<br />';
-        echo '(float) "123 ';
-        var_dump((float) "123");
-        echo '<br />';
-        echo '(float) "123.45" ';
-        var_dump((float) "123.45");
-        echo '<br />';
-        echo '(float) "123Hola" ';
-        var_dump((float) "123Hola");
-        echo '<br />';
-        echo '(float) "Hola123" ';
-        var_dump((float) "Hola123");
-        echo '<br />';
-        echo '(float) "" ';
-        var_dump((float) "");
-        echo '<br />';
-        echo '(float) 0xA2 ';
-        var_dump((float) 0xA2);
-        echo '<br />';
-        echo '(float) "0.001" ';
-        var_dump((float) "0.001");
-        echo '<br />';
-        echo '(float) NULL';
-        var_dump((float) NULL);
-        // Conversión cadena
-        echo "<h2>Conversión cadena</h2>";
-        echo '(string) true ';
-        var_dump((string) true);
-        echo '<br />';
-        echo '(string) false ';
-        var_dump((string) false);
-        echo '<br />';
-        echo '(string) 0 ';
-        var_dump((string) 0);
-        echo '<br />';
-        echo '(string) 012 ';
-        var_dump((string) 012);
-        echo '<br />';
-        echo '(string) 0.23 ';
-        var_dump((string) 0.23);
-        echo '<br />';
-        echo '(string) 0.0 ';
-        var_dump((string) 0.0);
-        echo '<br />';
-        echo '(string) NULL ';
-        var_dump((string) NULL);
-        ?>
+        <h2>Conversión cadena</h2>
+        <table>
+            <tr>
+                <td>(string) true</td>
+                <td class="conversion"><?php var_dump((string) true); ?></td>
+            </tr>
+            <tr>
+                <td>(string) false</td>
+                <td class="conversion"><?php var_dump((string) false); ?></td>
+            </tr>
+            <tr>
+                <td>(string) 0</td>
+                <td class="conversion"><?php var_dump((string) 0); ?></td>
+            </tr>
+            <tr>
+                <td>(string) 012</td>
+                <td class="conversion"><?php var_dump((string) 012); ?></td>
+            </tr>
+            <tr>
+                <td>(string) 0.23</td>
+                <td class="conversion"><?php var_dump((string) 0.23); ?></td>
+            </tr>
+            <tr>
+                <td>(string) 0.0</td>
+                <td class="conversion"><?php var_dump((string) 0.0); ?></td>
+            </tr>
+            <tr>
+                <td>(string) NULL</td>
+                <td class="conversion"><?php var_dump((string) NULL); ?></td>
+            </tr>
+        </table>
     </body>
 </html>

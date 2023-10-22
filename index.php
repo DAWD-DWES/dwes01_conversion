@@ -18,6 +18,14 @@
                 <td class="conversion"><?php var_dump((bool) "0"); ?></td>
             </tr>
             <tr>
+                <td>(bool) "0.0"</td>
+                <td class="conversion"><?php var_dump((bool) "0.0"); ?></td>
+            </tr>
+            <tr>
+                <td>(bool) "1"</td>
+                <td class="conversion"><?php var_dump((bool) "1"); ?></td>
+            </tr>
+            <tr>
                 <td>(bool) 1</td>
                 <td class="conversion"><?php var_dump((bool) 1); ?></td>
             </tr>

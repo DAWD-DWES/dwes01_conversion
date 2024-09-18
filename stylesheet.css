@@ -29,13 +29,12 @@ td {
     width: 50%;
 }
 
-.conversion {
+.respuesta {
     opacity: 0;
 }
 
-.conversion:hover {
+.respuesta:hover {
     opacity: 1;
 }
-
 
 
